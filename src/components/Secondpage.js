@@ -5,7 +5,8 @@ const Secondpage = () => {
   return (
     <>
       I am the Secondpage
-      <Link to="/firstpage">Firstpage</Link>
+      <Link to="/">Firstpage</Link>
+      <Link to="/thirdpage">Thirdpage</Link>
     </>
   );
 };
