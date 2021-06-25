@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Firstpage = () => {
   return (
     <>
-      I am the Firstpage
+      I am the guy
       <Link to="/secondpage">Secondpage</Link>
     </>
   );
