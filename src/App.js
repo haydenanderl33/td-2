@@ -1,21 +1,22 @@
-import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Firstpage from "./components/Firstpage";
-import Secondpage from "./components/Secondpage";
-import Thirdpage from "./components/Thirdpage";
+import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Homepage from './components/Homepage/homepage-index';
+import Aboutpage from './components/Aboutpage/aboutpage-index';
+import AcaiMenupage from './components/AcaiMenupage/acai-menupage-index';
+import PitayaMenupage from './components/PitayaMenuPage/pitaya-menu-index';
 
 const App = () => {
 
-  
-  return (
+  return(
     <Router>
       <Switch>
-        <Route exact path="/" component={Firstpage} />
-        <Route path="/secondpage" component={Secondpage} />
-        <Route path="/thirdpage" component={Thirdpage} />
+        <Route exact path='/' component={Homepage} />
+        <Route path='/menu/açaí-bowls' component={AcaiMenupage} />
+        <Route path='/menu/pitaya-bowls' component={PitayaMenupage} />
+        <Route path='/about' component={Aboutpage} />
       </Switch>
     </Router>
-  );
-};
+  )
+}
 
 export default App;
